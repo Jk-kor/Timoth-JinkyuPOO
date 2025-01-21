@@ -129,6 +129,9 @@
   <ItemGroup>
     <ClCompile Include="App musique.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Instrument.hpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
