@@ -6,11 +6,8 @@ using namespace std;
 
 class Instrument {
 public:
+    virtual void play(const string& note, float duration) = 0;
     virtual ~Instrument() = default;
-
-    virtual void playNote(const string& note) const = 0;
-
-    virtual void display() const = 0;
 };
 
 #endif
