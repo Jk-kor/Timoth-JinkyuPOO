@@ -21,7 +21,7 @@ int main() {
     cin.ignore();
     cout << "Entrer la musique avec une serie de lettres et chiffres (ex: C4 E4 G4):\n";
     string musique;
-    getline(std::cin, musique);
+    getline(cin, musique);
 
     for (int i = 0; i <= musique.size(); i++) {
         if (musique[i] == 'A') {
