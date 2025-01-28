@@ -18,38 +18,38 @@ int main() {
     cout << "1. Lent\n2. Normal\n3. Rapide\n";
     int Choixrythme;
     cin >> Choixrythme;
-
+    cin.ignore();
     cout << "Entrer la musique avec une serie de lettres et chiffres (ex: C4 E4 G4):\n";
     string musique;
-    cin >> musique;
+    getline(std::cin, musique);
 
-    for (int i = 0; i <= musique.length(); i++) {
+    for (int i = 0; i <= musique.size(); i++) {
         if (musique[i] == 'A') {
-            cout << "La";
+            cout << "La ";
             i += 2;
         }
         else if (musique[i] == 'B') {
-            cout << "Si";
+            cout << "Si ";
             i += 2;
         }
         else if (musique[i] == 'C') {
-            cout << "Do";
+            cout << "Do ";
             i += 2;
         }
         else if (musique[i] == 'D') {
-            cout << "Re";
+            cout << "Re ";
             i += 2;
         }
         else if (musique[i] == 'E') {
-            cout << "Mi";
+            cout << "Mi ";
             i += 2;
         }
         else if (musique[i] == 'F') {
-            cout << "Fa";
+            cout << "Fa ";
             i += 2;
         }
         else if (musique[i] == 'G') {
-            cout << "Sol";
+            cout << "Sol ";
             i += 2;
         }
     }
