@@ -1,2 +1,5 @@
 #include <iostream>
-#include "Guitar.hpp"
+#include "Guitare.hpp"
+void Guitare::play(const string& note, float duration) {
+    cout << "Guitare: " << note << ", " << duration << endl;
+}
